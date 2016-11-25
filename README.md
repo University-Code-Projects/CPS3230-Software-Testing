@@ -70,8 +70,16 @@ Progress: N/A <br>
         + a. Note that even though balance might drop due to withdrawals, <br>
         + b. A running total of the amount of commission earned by an affiliate should be tracked.<br>
 + 3. Create a model which describes how this aspect of the web application should function. <br>
-    +i. Use this model to automate the generation and execution of test cases for this aspect of the system. <br>
+    + i. Use this model to automate the generation and execution of test cases for this aspect of the system. <br>
 + 4. Document the following:<br>
     + i. Your model in a graphical notation<br>
     + ii. A graph depicting how much state coverage was achieved against the number of test cases executed.<br>
     + iii. Explain what step(s) you would take to reduce the amount of test cases required to achieve 100% state coverage.<br>
+    
+#Task 4: Performance Testing<br>
+Weight: 20%<br>
+Progress: N/A <br>
+It is expected serving and clicking of adverts will generate heavy usage loads on the system. Stakeholders are concerned about the extent to which the serveAdvert() and adClicked() methods can deal with large usage loads.<br>
++ 1. Using a performance testing tool of your choice or a custom-built test harness<br>
++ 2. Provide an indication of the number of affiliates that your system can handle. <br>
+    + i. Each affiliate is expected to request between an everage of 2.5 adverts per second with end users expected to click on 10% of delivered adverts.<br>
