@@ -1,6 +1,10 @@
 # CPS3230-Software-Testing
-Repository for CPS3230 Fundamentals of Software Testing Assignment
-<br><br>
+Repository for CPS3230 Fundamentals of Software Testing Assignment<br>
+Deadline: Monday 9th January 2017 till 12pm<br>
+Submission:
+ + Soft-copy: Each individual member must submit the report and any related files (code) through VLE <br>
+ + Hard-copy: A hard copy is to be submitted to Vanessa Marie Borg, the department secretary of Computer Science <br>
+
 #Rules & Specifications for the system<br>
 + 1. Affiliates can register with the system<br>
     + a. These are assigned a unique ID (primary key)<br>
