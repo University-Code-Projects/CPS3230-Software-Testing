@@ -43,3 +43,35 @@ At this stage, not required to produce any implementations of the following inte
 Modification can be made to the design presented as it is only a first draft by the architect and may need adjustments in order
 to function and be fully testable.
 Make sure to document any assumptions made
+
+#Task 2: Cucumber and Automated Web Testing<br>
+Weight: 28%<br>
+Progress: N/A<br>
++ 1. Develop a web application that uses the classes, these must supports two pages:<br>
+    + i. A login page for affiliates<br>
+    + ii. An account page for affiliates<br>
++ 2. Web application should behave according to the scenarios below. Document any test doubles you needed to implement as well as any issues relating to test data that we came across. (See PDF for full Scenarios)<br>
+    + i. Successful Affiliate Login<br>
+    + ii. Unsuccessful Affiliate Login<br>
+    + iii. Account Admin Page Contents<br>
+    + iv. Withdrawals<br>
+    
+#Task 3: Model Based Testing <br>
+Weight: 24%<br>
+Progress: N/A <br>
++ 1. Modify your web application to support simple ad delivery from one AdProvider implementation. <br>
++ 2. Your stakeholders are now interested in generating test cases based on the following rules:<br>
+    + i. An affiliate initially has a balance of €0.00 and an affiliate-type of Bronze<br>
+    + ii. Every time an affiliate requests an ad and a user clicks on it, the affiliate’s balance will be increased by €0.50<br>
+    + iii. When an affiliate generates his first €50 then he is promoted to an affiliatetype of Silver. <br>
+        + a. Note that even though an  affiliate’s balance might drop due to withdrawals,<br>
+        + b. A running total of the amount of commission earned by an affiliate should be tracked.<br>
+    + iv. When an affiliate generates his first €500 then he is promoted to an affiliate type of Gold.<br>
+        + a. Note that even though balance might drop due to withdrawals, <br>
+        + b. A running total of the amount of commission earned by an affiliate should be tracked.<br>
++ 3. Create a model which describes how this aspect of the web application should function. <br>
+    +i. Use this model to automate the generation and execution of test cases for this aspect of the system. <br>
++ 4. Document the following:<br>
+    + i. Your model in a graphical notation<br>
+    + ii. A graph depicting how much state coverage was achieved against the number of test cases executed.<br>
+    + iii. Explain what step(s) you would take to reduce the amount of test cases required to achieve 100% state coverage.<br>
