@@ -7,6 +7,9 @@ Submission:
 
 #Rules & Specifications for the system<br>
 + 1. Affiliates can register with the system<br>
+```diff
++ Done
+```
     + a. These are assigned a unique ID (primary key)<br>
     + b. The Affiliate Type is set to bronze with balance 0 upon registration<br>
 + 2. Affiliates type if changed under the following conditions<br>
@@ -34,7 +37,7 @@ Submission:
 
 #Task 1: Unit Testing and Test Driven Development<br>
 Weight: 28%<br>
-Progress: N/A<br>
+Progress: In Progress<br>
 + 1. Required to build and UNIT-TEST the system outline in the specifications using TEST DRIVE approach <br>
 + 2. Ensure maximum TEST COVERAGE<br>
 + 3. Document statement coverage analysis, any test patterns used, use of test doubles<br>
