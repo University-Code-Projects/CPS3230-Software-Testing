@@ -87,6 +87,77 @@ public class AdPlatformTest {
         assertEquals(false,adPlatform.updateAffiliate(new Affiliate(6,"Client", 5.5)));
     }
 
-    //need to test that on creation of affiliation balance is 0
+    @Test//Testing that on creation of affiliation balance is 0
+    public void testBalanceOnCreation() throws Exception {
+        Affiliate aff = new Affiliate(1,"Client", 5);
+        adPlatform.registerAffiliate(aff);
+        assertTrue(aff.getBalance()==0);
+    }
 
+    //create for loop, adClicked for x times to generate illusion of silver or gold promotion
+    @Test//Checking affiliate is promoted to silver once reaching credit of 50
+    public void affiliateTypeSilverTrue() throws Exception {
+        Affiliate aff = new Affiliate(1,"Client", 5);
+        adPlatform.registerAffiliate(aff);
+        for(int i =0; i<=99;i++){
+            adPlatform.adClicked(1); //adding 50c to affiliate credit
+        }
+        assertEquals(AffiliateType.SILVER,adPlatform.getAffiliatesType(1));
+    }
+
+    @Test//Checking affiliate is still bronze at 49.50 (bounds)
+    public void affiliateTypeSilverFalse() throws Exception {
+        Affiliate aff = new Affiliate(1,"Client", 5);
+        adPlatform.registerAffiliate(aff);
+        for(int i =0; i<=98;i++){//aff should have 49.50
+            adPlatform.adClicked(1); //adding 50c to affiliate credit
+        }
+        assertEquals(AffiliateType.BRONZE,adPlatform.getAffiliatesType(1));
+    }
+
+    //create for loop, adClicked for x times to generate illusion of silver or gold promotion
+    @Test//Checking affiliate is promoted to silver once reaching credit of 500
+    public void affiliateTypeGoldTrue() throws Exception {
+        Affiliate aff = new Affiliate(1,"Client", 5);
+        adPlatform.registerAffiliate(aff);
+        for(int i =0; i<=999;i++){
+            adPlatform.adClicked(1); //adding 50c to affiliate credit
+        }
+        System.out.print(aff.getBalance());
+        assertEquals(AffiliateType.GOLD,adPlatform.getAffiliatesType(1));
+    }
+
+    @Test//Checking affiliate is still bronze at 499.50 (bounds)
+    public void affiliateTypeGoldFalse() throws Exception {
+        Affiliate aff = new Affiliate(1,"Client", 5);
+        adPlatform.registerAffiliate(aff);
+        for(int i =0; i<=998;i++){//aff should have 49.50
+            adPlatform.adClicked(1); //adding 50c to affiliate credit
+        }
+        assertEquals(AffiliateType.SILVER,adPlatform.getAffiliatesType(1));
+    }
+
+    //TEST cases when less than 5 credit, bronze with more than 5, silver, gold
+    @Test//Setting Balance when affiliate has less than 5 credit
+    public void affiliateSetBalanceLessThanFive() throws Exception {
+        Affiliate aff = new Affiliate(1,"Client", 5);
+        adPlatform.registerAffiliate(aff);
+        for(int i =0; i<=8;i++) {//aff should have 4.5
+            adPlatform.adClicked(1); //adding 50c to affiliate credit
+        }
+        assertEquals(false,adPlatform.settleAffiliateBalance(aff));
+    }
+
+    @Test//Setting Balance when affiliate has less than 5 credit, resulting true
+    public void affiliateSetBalanceTrue() throws Exception {
+        Affiliate aff = new Affiliate(1, "Client", 5);
+        adPlatform.registerAffiliate(aff);
+        for (int i = 0; i <= 9; i++) {//aff should have 5
+            adPlatform.adClicked(1); //adding 50c to affiliate credit
+        }
+        //affiliate should get an updated balance, to 0
+        assertEquals(true, adPlatform.settleAffiliateBalance(aff));
+    }
+
+    
 }

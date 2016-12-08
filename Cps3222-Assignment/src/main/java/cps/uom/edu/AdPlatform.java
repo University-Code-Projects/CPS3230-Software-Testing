@@ -13,6 +13,7 @@ public class AdPlatform {
 
     public AdPlatform() {
         this.affiliates = new ArrayList<Affiliate>();
+        this.adProviders = new ArrayList<AdProvider>();
     }
 
     //get type from id of affiliate
@@ -46,9 +47,6 @@ public class AdPlatform {
         return false;
     }
 
-    public void setAdProviders(Collection<AdProvider> adProviders) {
-        this.adProviders = adProviders;
-    }
 
     public boolean registerAffiliate(Affiliate affiliate){
         // contains uses the default method equals(obj), which we override
@@ -59,27 +57,56 @@ public class AdPlatform {
         }
         affiliates.add(affiliate);
         return true;
-
-/*
-        if (!affiliates.contains(affiliate)) {//affiliate does not exist in collection
-            // add to collection
-            System.out.print("Test here");
-        }
-*/
     }
 
     public boolean settleAffiliateBalance(Affiliate affiliate){
+        //check balance is greater than 5
+        if(affiliate.getBalance() >= 5){
+            //ask for payment provider
+            //check type of affiliate and set commission accordingly
+            double comm =0;
+            if(affiliate.getType() == AffiliateType.GOLD){
+                comm = affiliate.getBalance() * 0.05;
+            }else if(affiliate.getType() == AffiliateType.SILVER) {
+                comm = affiliate.getBalance() * 0.075;
+            }else{//type is bronze
+                comm = affiliate.getBalance() * 0.1;
+            }
+            System.out.println("Balance withdrawn: "+ (affiliate.getBalance() - comm));
+            System.out.println("Commission on withdrawal: "+ comm);
+            affiliate.setBalance(0);
+            //type was unchanged
+            //assumption that a user cannot downscale for previous state
+            updateAffiliate(affiliate);
+            return true;
+        }
         return false;
     }
 
     public boolean serveAdvert(AdDescription adDescription){
+        //checking adProviders to see any similar adDescriptions
+        for (AdProvider adprov: adProviders) {     //iterating through the list of adProviders
+            Advert a = adprov.serveAdvert(adDescription); //advert found by provider
+            if (a != null) { //advert from provider found
+                if (a.getFormat() == adDescription.getFormat()) {//advert has same description as specified by aff
+                    return true;
+                }
+            }
+        }
         return false;
     }
 
     public void adClicked(int affliateID){
         Affiliate aff = getAffiliate(affliateID);
         if(aff != null){
-            aff.setBalance(aff.getBalance()+ 0.5);
+            aff.setBalance(aff.getBalance()+ 0.5);//incrementing the affiliate balance by 50c
+            if(aff.getType()!= AffiliateType.GOLD){//if aff is gold cannot get promoted further
+                if(aff.getBalance() >= 500){
+                    aff.setType(AffiliateType.GOLD);
+                } else if(aff.getBalance() >= 50){//setting the aff type according to his balance
+                    aff.setType(AffiliateType.SILVER);
+                }
+            }
         }
         updateAffiliate(aff);
         return;
