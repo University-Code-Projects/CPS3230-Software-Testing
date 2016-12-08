@@ -5,11 +5,11 @@ Submission:
  + Soft-copy: Each individual member must submit the report and any related files (code) through VLE <br>
  + Hard-copy: A hard copy is to be submitted to Vanessa Marie Borg, the department secretary of Computer Science <br>
 
+```diff
++ Specifications Implemented
+```
 #Rules & Specifications for the system<br>
 + 1. Affiliates can register with the system<br>
-```diff
-+ Done
-```
     + a. These are assigned a unique ID (primary key)<br>
     + b. The Affiliate Type is set to bronze with balance 0 upon registration<br>
 + 2. Affiliates type if changed under the following conditions<br>
