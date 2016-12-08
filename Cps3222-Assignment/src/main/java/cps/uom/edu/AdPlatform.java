@@ -88,9 +88,8 @@ public class AdPlatform {
         for (AdProvider adprov: adProviders) {     //iterating through the list of adProviders
             Advert a = adprov.serveAdvert(adDescription); //advert found by provider
             if (a != null) { //advert from provider found
-                if (a.getFormat() == adDescription.getFormat()) {//advert has same description as specified by aff
-                    return true;
-                }
+                System.out.print("Same format");
+                return true;
             }
         }
         return false;
@@ -110,5 +109,15 @@ public class AdPlatform {
         }
         updateAffiliate(aff);
         return;
+    }
+
+    public boolean addProviderToList(AdProvider adProvider){
+        for (AdProvider aprov : adProviders){
+            if(aprov.name == adProvider.name){
+                return false;
+            }
+        }
+        adProviders.add(adProvider);
+        return true;
     }
 }

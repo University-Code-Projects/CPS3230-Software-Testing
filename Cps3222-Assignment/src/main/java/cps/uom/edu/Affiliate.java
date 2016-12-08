@@ -4,10 +4,12 @@ package cps.uom.edu;
  * Created by jonathan on 29/11/2016.
  */
 public class Affiliate {
-    private int id;
-    private String name;
-    private AffiliateType type;
-    private double balance;
+    public int id;
+    public String name;
+    public AffiliateType type;
+    public double balance;
+
+
 
     //getters
     public int getId() {
@@ -43,10 +45,6 @@ public class Affiliate {
         this.balance = balance;
     }
 
-    public Affiliate(int id) {
-        this.id = id;
-    }
-
     public Affiliate(int id, String name, AffiliateType type, double balance) {
         this.id = id;
         this.name = name;
@@ -66,7 +64,7 @@ public class Affiliate {
     public boolean equals(final Object object) {
         if (object instanceof Affiliate) {
             final Affiliate other = (Affiliate) object;
-            return other.getId() == this.getId();//checking that only the id is unique
+            return other.id == this.id;//checking that only the id is unique
         }
         return false;
     }

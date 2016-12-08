@@ -13,4 +13,8 @@ public class Advert {
     public AdFormat getFormat() {
         return null;
     }
+
+    public Advert(int id) {
+        this.id = id;
+    }
 }

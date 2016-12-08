@@ -1,12 +1,13 @@
 
 import com.sun.xml.internal.bind.v2.TODO;
-import cps.uom.edu.AdPlatform;
-import cps.uom.edu.Affiliate;
-import cps.uom.edu.AffiliateType;
+import cps.uom.edu.*;
 import org.junit.Before;
 import org.junit.After;
 import org.junit.Test;
+
 import static org.junit.Assert.*;
+import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.when;
 
 /**
  * Created by jonathan on 29/11/2016.
@@ -159,5 +160,28 @@ public class AdPlatformTest {
         assertEquals(true, adPlatform.settleAffiliateBalance(aff));
     }
 
-    
+    //going to test serveAdvert
+    //going to use mock tests
+    @Test//testing serveAdvert
+    public void affiliateServeAdvertTrue() throws Exception {
+        Keywords keys = new Keywords();
+        keys.addKeys("BLACK");
+        AdFormat format = null;
+        AdDescription desc = new AdDescription(format, keys);
+
+        AdProvider adprov = mock(AdProvider.class);
+        when(adprov.serveAdvert(desc)).thenReturn(new Advert(1));
+        adPlatform.addProviderToList(adprov);
+        assertEquals(true, adPlatform.serveAdvert(desc));
+    }
+
+    @Test//testing serveAdvert when there is no adverts/providers found
+    public void affiliateServeAdvertFalse() throws Exception {
+        Keywords keys = new Keywords();
+        keys.addKeys("BLACK");
+        AdFormat format = null;
+        AdDescription desc = new AdDescription(format, keys);
+
+        assertEquals(false, adPlatform.serveAdvert(desc));
+    }
 }

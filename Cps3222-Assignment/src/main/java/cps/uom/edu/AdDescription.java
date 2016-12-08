@@ -1,17 +1,18 @@
 package cps.uom.edu;
 
-import com.sun.org.apache.xpath.internal.compiler.Keywords;
-
 /**
  * Created by jonathan on 29/11/2016.
  */
 public class AdDescription {
-    private AdFormat format;
-    private Keywords keywords;
+    public AdFormat format;
+    public Keywords keywords;
 
+
+    /*
     public AdFormat getFormat() {
         return format;
     }
+
 
     public void setFormat(AdFormat format) {
         this.format = format;
@@ -22,6 +23,12 @@ public class AdDescription {
     }
 
     public void setKeywords(Keywords keywords) {
+        this.keywords = keywords;
+    }
+
+    */
+    public AdDescription(AdFormat format, Keywords keywords){
+        this.format = format;
         this.keywords = keywords;
     }
 }
