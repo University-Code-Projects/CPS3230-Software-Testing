@@ -24,19 +24,21 @@
         <table border="0">
             <tbody>
             <%
-                String id = request.getParameter("id");//cannot be empty
+                String idS = request.getParameter("id");//cannot be empty
+                int id = Integer.parseInt(idS);
                 String pass = request.getParameter("pass");
+                Affiliate a = new Affiliate(id, pass);
                 //String name = obtained from affiliate
                 //double balance =
                 AdPlatform plat = new AdPlatform();
-                Affiliate aff1 = new Affiliate(1,"ClientA", 5);
-                Affiliate aff2 = new Affiliate(2,"ClientB", 5);
-                Affiliate aff3 = new Affiliate(3,"ClientC", 5);
+                Affiliate aff1 = new Affiliate(1,"pass1");
+                Affiliate aff2 = new Affiliate(2,"pass2");
+                Affiliate aff3 = new Affiliate(3,"pass3");
 
                 plat.registerAffiliate(aff1);
                 plat.registerAffiliate(aff2);
                 plat.registerAffiliate(aff3);
-                if(!plat.validator(id)){//affiliate exists
+                if(!plat.validator(a)){//affiliate exists
                     //error message
                     System.out.println("Not Found");
                     response.sendRedirect("error.jsp");

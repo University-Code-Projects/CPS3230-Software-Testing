@@ -1,8 +1,6 @@
 package cps.uom.edu;
 
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Iterator;
+import java.util.*;
 
 /**
  * Created by jonathan on 29/11/2016.
@@ -37,12 +35,16 @@ public class AdPlatform {
     }
 
     //updating the instance worked on to the collection
-    public boolean validator(String idS){
-        System.out.println("here");
-        int id = Integer.parseInt(idS);
+    public boolean validator(Affiliate a){
         for (Affiliate aff : affiliates){
-            if(aff.getId() == id){
-                return true;
+            System.out.print("yo");
+            if(aff.getId() == a.getId()){
+                System.out.println("hersies");
+                System.out.println(a.getPassword());
+                System.out.println(aff.getPassword());
+                if(aff.getPassword().equals(a.getPassword())){
+                    return true;
+                }
             }
         }
         return false;

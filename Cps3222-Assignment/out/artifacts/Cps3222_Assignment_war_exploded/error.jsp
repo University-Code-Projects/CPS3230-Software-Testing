@@ -16,7 +16,7 @@
 <body>
 <h1>Login Page</h1>
 <script>
-    alert("Id or password are incorrect")
+    alert("ID or password are incorrect")
 </script>
 <form name="myForm" action="display.jsp" method="POST">
     <table border="0">

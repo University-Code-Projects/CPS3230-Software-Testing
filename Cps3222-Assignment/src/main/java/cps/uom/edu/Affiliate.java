@@ -5,7 +5,7 @@ package cps.uom.edu;
  */
 public class Affiliate {
     public int id;
-    public String name;
+    public String name, password;
     public AffiliateType type;
     public double balance;
 
@@ -28,6 +28,10 @@ public class Affiliate {
         return balance;
     }
 
+    public String getPassword() {
+        return password;
+    }
+
     //setters
     public void setId(int id) {
         this.id = id;
@@ -45,6 +49,10 @@ public class Affiliate {
         this.balance = balance;
     }
 
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
     public Affiliate(int id, String name, AffiliateType type, double balance) {
         this.id = id;
         this.name = name;
@@ -57,6 +65,11 @@ public class Affiliate {
         this.name = name;
         this.type = AffiliateType.BRONZE;
         this.balance = 0;
+    }
+
+    public Affiliate(int id, String password) {
+        this.id = id;
+        this.password = password;
     }
 
     public Affiliate(int id) {
