@@ -13,6 +13,10 @@
 
 <!DOCTYPE html>
 <html>
+<%!
+    private String name = "";
+    private double balance = 0.0;
+%>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>Login Page</title>
@@ -24,16 +28,24 @@
         <table border="0">
             <tbody>
             <%
-                String idS = request.getParameter("id");//cannot be empty
-                int id = Integer.parseInt(idS);
+                String idS = request.getParameter("id");//cannot be
+                int id;
+
+                try {
+                    id = Integer.parseInt(idS);
+                } catch(Exception e) {
+                    id = -1;
+                }
+
+                System.out.println(id);
                 String pass = request.getParameter("pass");
                 Affiliate a = new Affiliate(id, pass);
                 //String name = obtained from affiliate
                 //double balance =
                 AdPlatform plat = new AdPlatform();
-                Affiliate aff1 = new Affiliate(1,"pass1");
-                Affiliate aff2 = new Affiliate(2,"pass2");
-                Affiliate aff3 = new Affiliate(3,"pass3");
+                Affiliate aff1 = new Affiliate(1,"pass1","Client1");
+                Affiliate aff2 = new Affiliate(2,"pass2","Client2");
+                Affiliate aff3 = new Affiliate(3,"pass3","Client3");
 
                 plat.registerAffiliate(aff1);
                 plat.registerAffiliate(aff2);
@@ -42,12 +54,15 @@
                     //error message
                     System.out.println("Not Found");
                     response.sendRedirect("error.jsp");
+                    return;
+                    //System.out.println("didnt redirect");
                 }
-                //String idS = request.getParameter("id");//cannot be empty
-                //int id = Integer.parseInt(idS);
-                //String pass = request.getParameter("pass");
-                //String name = obtained from affiliate
-                //double balance =
+
+                a = plat.getAffiliate(id);
+
+                    name = a.getName();
+                    balance = a.getBalance();
+                //}
             %>
 
             <tr>
@@ -55,8 +70,12 @@
                 <td><%= id %></td>
             </tr>
             <tr>
+                <td>Affiliate Name : </td>
+                <td><%= name %></td>
+            </tr>
+            <tr>
                 <td>Affiliate Balance : </td>
-                <td><%= pass %></td>
+                <td><%= balance %></td>
             </tr>
             </tbody>
         </table>

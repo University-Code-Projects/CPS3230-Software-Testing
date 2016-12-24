@@ -70,6 +70,14 @@ public class Affiliate {
     public Affiliate(int id, String password) {
         this.id = id;
         this.password = password;
+        this.type = AffiliateType.BRONZE;
+        this.balance = 0;
+    }
+
+    public Affiliate(int id, String password, String name) {
+        this.id = id;
+        this.password = password;
+        this.name = name;
     }
 
     public Affiliate(int id) {

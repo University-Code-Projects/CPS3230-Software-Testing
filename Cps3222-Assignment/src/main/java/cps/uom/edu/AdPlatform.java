@@ -37,9 +37,7 @@ public class AdPlatform {
     //updating the instance worked on to the collection
     public boolean validator(Affiliate a){
         for (Affiliate aff : affiliates){
-            System.out.print("yo");
             if(aff.getId() == a.getId()){
-                System.out.println("hersies");
                 System.out.println(a.getPassword());
                 System.out.println(aff.getPassword());
                 if(aff.getPassword().equals(a.getPassword())){
