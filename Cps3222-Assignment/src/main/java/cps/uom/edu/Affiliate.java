@@ -59,6 +59,10 @@ public class Affiliate {
         this.balance = 0;
     }
 
+    public Affiliate(int id) {
+        this.id = id;
+    }
+
     // override equals method to compare with ID
     @Override
     public boolean equals(final Object object) {

@@ -5,20 +5,26 @@
   Time: 13:09
   To change this template use File | Settings | File Templates.
 --%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<html>
+<%@ page import ="cps.uom.edu.*" contentType="text/html" pageEncoding="UTF-8" language="java"%>
+<jsp:useBean id="obj" class="cps.uom.edu.AdPlatform"/>
+<jsp:setProperty name="obj" property="*"/>
+
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>JSP Page</title>
+  <title>Login Page</title>
 </head>
 <body>
-<h1>Hello World</h1>
+<h1>Login Page</h1>
 <form name="myForm" action="display.jsp" method="POST">
   <table border="0">
     <tbody>
     <tr>
-      <th>First Name : </th>
-      <th><input type = "text" name = "first" value="" size ="50"></th>
+      <th>Affiliate Id : </th>
+      <th><input type = "text" name = "id" value="" size ="30"></th>
+    </tr>
+    <tr>
+      <th>Affiliate password : </th>
+      <th><input type = "password" name = "pass" value="" size ="30"></th>
     </tr>
     </tbody>
   </table>

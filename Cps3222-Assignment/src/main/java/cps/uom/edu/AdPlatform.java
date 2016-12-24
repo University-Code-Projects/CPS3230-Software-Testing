@@ -37,6 +37,18 @@ public class AdPlatform {
     }
 
     //updating the instance worked on to the collection
+    public boolean validator(String idS){
+        System.out.println("here");
+        int id = Integer.parseInt(idS);
+        for (Affiliate aff : affiliates){
+            if(aff.getId() == id){
+                return true;
+            }
+        }
+        return false;
+    }
+
+    //updating the instance worked on to the collection
     public boolean updateAffiliate(Affiliate affiliate){
         for (Affiliate aff : affiliates){
             if(aff.getId() == affiliate.getId()){
