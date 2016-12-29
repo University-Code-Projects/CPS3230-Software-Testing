@@ -14,8 +14,12 @@
 <!DOCTYPE html>
 <html>
 <%!
+    private Affiliate a;
+    private int id = -1;
+    private String pass = "";
     private String name = "";
     private double balance = 0.0;
+    private boolean flag = false;
 %>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -29,17 +33,20 @@
             <tbody>
             <%
                 String idS = request.getParameter("id");//cannot be
-                int id;
 
                 try {
                     id = Integer.parseInt(idS);
+                    a = new Affiliate(id, pass);
+                    pass = request.getParameter("pass");
+                    flag = true;
                 } catch(Exception e) {
-                    id = -1;
+                    if(id < 0) {
+                        id = -1;
+                    }
                 }
 
                 System.out.println(id);
-                String pass = request.getParameter("pass");
-                Affiliate a = new Affiliate(id, pass);
+
                 //String name = obtained from affiliate
                 //double balance =
                 AdPlatform plat = new AdPlatform();
@@ -50,7 +57,38 @@
                 plat.registerAffiliate(aff1);
                 plat.registerAffiliate(aff2);
                 plat.registerAffiliate(aff3);
-                if(!plat.validator(a)){//affiliate exists
+                String x = request.getParameter("Withdraw");
+
+                if(flag){
+                    a = plat.getAffiliate(id);
+                    plat.adClicked(id);
+                    plat.adClicked(id);
+                    plat.adClicked(id);
+                    plat.adClicked(id);
+                    plat.adClicked(id);
+                    plat.adClicked(id);
+                    plat.adClicked(id);
+                    plat.adClicked(id);
+                    plat.adClicked(id);
+                    plat.adClicked(id);
+                    plat.adClicked(id);
+                    plat.adClicked(id);
+                    plat.adClicked(id);
+                    plat.adClicked(id);
+                    plat.adClicked(id);
+                    plat.adClicked(id);
+                    plat.adClicked(id);
+                    plat.adClicked(id);
+                    flag = false;
+                }
+
+                if("Withdraw".equals(x)){
+                    System.out.println("WITHDRAWING");
+                    session.setAttribute("balance", balance);
+                    System.out.println(balance);
+                    session.setAttribute("msg", plat.settleAffiliateBalance(a));
+                    response.sendRedirect("withdraw.jsp");
+                }else if(!plat.validator(a)){//affiliate exists
                     //error message
                     System.out.println("Not Found");
                     response.sendRedirect("error.jsp");
@@ -58,10 +96,10 @@
                     //System.out.println("didnt redirect");
                 }
 
-                a = plat.getAffiliate(id);
+                name = a.getName();
+                balance = a.getBalance();
 
-                    name = a.getName();
-                    balance = a.getBalance();
+
                 //}
             %>
 
@@ -79,7 +117,8 @@
             </tr>
             </tbody>
         </table>
-        <input type="button" value="Withdraw" name="withdraw" />
+
+        <input type="submit" value="Withdraw" name="Withdraw" />
     </form>
     </body>
 </html>
