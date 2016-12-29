@@ -16,15 +16,18 @@
 <%!
     private String name = "";
     private double balance = 0.0;
+    private double newBalance;
     private String msg;
 %>
 <body>
-<h1>Login Page</h1>
+<h1>Withdraw Page</h1>
 <form name="myForm" action="display.jsp" method="POST">
     <table border="0">
         <tbody>
         <tr>
-            <th>Balance|Message-Type|New-Balance</th>
+            <td>Balance</td>
+            <td>|Message-Type</td>
+            <td>|New-Balance</td>
         </tr>
         <%
             if(Boolean.parseBoolean(session.getAttribute("msg").toString())){
@@ -33,13 +36,16 @@
                 msg = "Error";
             }
             balance = Double.parseDouble(session.getAttribute("balance").toString());
+            newBalance = Double.parseDouble(session.getAttribute("newBalance").toString());
             String x = request.getParameter("Submit");
             if("Submit".equals(x)){
                 response.sendRedirect("display.jsp");
             }
         %>
         <tr>
-            <td><%= balance %></td> <td><%= msg %></td>
+            <td><%= balance %></td>
+            <td>|<%= msg %> </td>
+            <td>|<%= newBalance %> </td>
         </tr>
         </tbody>
     </table>

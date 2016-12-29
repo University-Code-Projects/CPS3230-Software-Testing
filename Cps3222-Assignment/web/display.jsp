@@ -23,7 +23,7 @@
 %>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>Login Page</title>
+    <title>Account Page</title>
 </head>
     <tBody>
     <body>
@@ -61,24 +61,9 @@
 
                 if(flag){
                     a = plat.getAffiliate(id);
-                    plat.adClicked(id);
-                    plat.adClicked(id);
-                    plat.adClicked(id);
-                    plat.adClicked(id);
-                    plat.adClicked(id);
-                    plat.adClicked(id);
-                    plat.adClicked(id);
-                    plat.adClicked(id);
-                    plat.adClicked(id);
-                    plat.adClicked(id);
-                    plat.adClicked(id);
-                    plat.adClicked(id);
-                    plat.adClicked(id);
-                    plat.adClicked(id);
-                    plat.adClicked(id);
-                    plat.adClicked(id);
-                    plat.adClicked(id);
-                    plat.adClicked(id);
+                    for (int i = 0; i<9; i++){
+                        plat.adClicked(id);
+                    }
                     flag = false;
                 }
 
@@ -87,6 +72,9 @@
                     session.setAttribute("balance", balance);
                     System.out.println(balance);
                     session.setAttribute("msg", plat.settleAffiliateBalance(a));
+                    balance = a.getBalance();
+                    System.out.println(balance);
+                    session.setAttribute("newBalance", balance);
                     response.sendRedirect("withdraw.jsp");
                 }else if(!plat.validator(a)){//affiliate exists
                     //error message
