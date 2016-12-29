@@ -16,7 +16,7 @@
 <%!
     private Affiliate a;
     private int id = -1;
-    private String pass = "";
+    private String pass = null;
     private String name = "";
     private double balance = 0.0;
     private boolean flag = false;
@@ -38,6 +38,7 @@
                     id = Integer.parseInt(idS);
                     a = new Affiliate(id, pass);
                     pass = request.getParameter("pass");
+                    System.out.println(pass);
                     flag = true;
                 } catch(Exception e) {
                     if(id < 0) {
@@ -60,7 +61,16 @@
                 String x = request.getParameter("Withdraw");
 
                 if(flag){
-                    a = plat.getAffiliate(id);
+                    a = new Affiliate(id,pass);
+                    if(plat.validator(a)){
+                        a = plat.getAffiliate(id);
+                    }else{
+                        //error message
+                        System.out.println("Not Found");
+                        response.sendRedirect("error.jsp");
+                        return;
+                        //System.out.println("didnt redirect");
+                    }
                     for (int i = 0; i<9; i++){
                         plat.adClicked(id);
                     }
@@ -76,7 +86,8 @@
                     System.out.println(balance);
                     session.setAttribute("newBalance", balance);
                     response.sendRedirect("withdraw.jsp");
-                }else if(!plat.validator(a)){//affiliate exists
+                }
+                /*else if(!plat.validator(a)){//affiliate exists
                     //error message
                     System.out.println("Not Found");
                     response.sendRedirect("error.jsp");
@@ -84,6 +95,7 @@
                     //System.out.println("didnt redirect");
                 }
 
+*/
                 name = a.getName();
                 balance = a.getBalance();
 

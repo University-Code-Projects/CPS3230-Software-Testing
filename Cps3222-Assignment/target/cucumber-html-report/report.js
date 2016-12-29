@@ -33,21 +33,21 @@ formatter.match({
   "location": "PageTest.login()"
 });
 formatter.result({
-  "duration": 3949061331,
+  "duration": 4089469642,
   "status": "passed"
 });
 formatter.match({
   "location": "PageTest.validLogin()"
 });
 formatter.result({
-  "duration": 2166189955,
+  "duration": 1612754829,
   "status": "passed"
 });
 formatter.match({
   "location": "PageTest.takenAdminPage()"
 });
 formatter.result({
-  "duration": 4139880465,
+  "duration": 3094035516,
   "status": "passed"
 });
 formatter.scenario({
@@ -82,19 +82,28 @@ formatter.match({
   "location": "PageTest.login()"
 });
 formatter.result({
-  "duration": 1970182895,
+  "duration": 3371319232,
   "status": "passed"
 });
-formatter.match({});
-formatter.result({
-  "status": "undefined"
+formatter.match({
+  "location": "PageTest.invalidLogin()"
 });
-formatter.match({});
 formatter.result({
-  "status": "undefined"
+  "duration": 2393409981,
+  "status": "passed"
 });
-formatter.match({});
+formatter.match({
+  "location": "PageTest.errorMsg()"
+});
 formatter.result({
-  "status": "undefined"
+  "duration": 18397655,
+  "status": "passed"
+});
+formatter.match({
+  "location": "PageTest.samePage()"
+});
+formatter.result({
+  "duration": 3200064148,
+  "status": "passed"
 });
 });

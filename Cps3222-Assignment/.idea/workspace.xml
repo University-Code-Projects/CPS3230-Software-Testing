@@ -3,46 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="2084a58c-fad0-4023-a001-4b26effad927" name="Default" comment="">
       <change type="NEW" beforePath="" afterPath="$APPLICATION_CONFIG_DIR$/options/window.state.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__cglib_cglib_nodep_2_1_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_gson_gson_2_3_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_19_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_9.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_4.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__info_cukes_cucumber_core_1_1_8.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__info_cukes_cucumber_html_0_2_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__info_cukes_cucumber_java_1_1_8.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__info_cukes_cucumber_junit_1_1_8.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__info_cukes_cucumber_jvm_deps_1_0_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__info_cukes_cucumber_picocontainer_1_1_8.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__info_cukes_gherkin_2_12_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_3_5_7_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_java_dev_jna_jna_4_1_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_java_dev_jna_jna_platform_4_1_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_exec_1_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_5_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_4_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_picocontainer_picocontainer_2_14_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_api_2_53_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_chrome_driver_2_53_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_edge_driver_2_53_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_firefox_driver_2_53_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_ie_driver_2_53_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_java_2_53_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_leg_rc_2_53_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_remote_driver_2_53_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_safari_driver_2_53_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_support_2_53_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/PageTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/RunCucumberTests.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/resources/Features/AffiliateLogin.feature" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/PageTest.class" afterPath="$PROJECT_DIR$/target/test-classes/PageTest.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Cps3222-Assignment.iml" afterPath="$PROJECT_DIR$/Cps3222-Assignment.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Cps3222_Assignment_war_exploded/display.jsp" afterPath="$PROJECT_DIR$/out/artifacts/Cps3222_Assignment_war_exploded/display.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Cps3222_Assignment_war_exploded/withdraw.jsp" afterPath="$PROJECT_DIR$/out/artifacts/Cps3222_Assignment_war_exploded/withdraw.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/PageTest.java" afterPath="$PROJECT_DIR$/src/test/java/PageTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/cucumber-html-report/report.js" afterPath="$PROJECT_DIR$/target/cucumber-html-report/report.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/display.jsp" afterPath="$PROJECT_DIR$/web/display.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/withdraw.jsp" afterPath="$PROJECT_DIR$/web/withdraw.jsp" />
     </list>
     <ignored path="Cps3222-Assignment.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -68,41 +34,18 @@
     <favorites_list name="Cps3222-Assignment" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.35470086">
+    <splitter split-orientation="horizontal" split-proportion="0.5909646">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="PageTest.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/test/java/PageTest.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="562">
-                  <caret line="56" column="0" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
+                <state relative-caret-position="598">
+                  <caret line="83" column="0" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
                   <folding>
                     <element signature="n#!!doc" expanded="true" />
                     <element signature="imports" expanded="true" />
                   </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="RunCucumberTests.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/test/java/RunCucumberTests.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="323">
-                  <caret line="19" column="0" selection-start-line="18" selection-start-column="31" selection-end-line="19" selection-end-column="0" />
-                  <folding>
-                    <element signature="n#!!doc" expanded="true" />
-                    <element signature="imports" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="AdPlatformTest.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/test/java/AdPlatformTest.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="562">
-                  <caret line="66" column="0" selection-start-line="65" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
-                  <folding />
                 </state>
               </provider>
             </entry>
@@ -110,8 +53,8 @@
           <file leaf-file-name="AffiliateLogin.feature" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/test/resources/Features/AffiliateLogin.feature">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="170">
-                  <caret line="10" column="41" selection-start-line="10" selection-start-column="41" selection-end-line="10" selection-end-column="41" />
+                <state relative-caret-position="153">
+                  <caret line="9" column="9" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="38" />
                   <folding />
                 </state>
               </provider>
@@ -124,8 +67,8 @@
           <file leaf-file-name="display.jsp" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/web/display.jsp">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="229">
-                  <caret line="78" column="27" selection-start-line="78" selection-start-column="27" selection-end-line="78" selection-end-column="40" />
+                <state relative-caret-position="365">
+                  <caret line="71" column="63" selection-start-line="71" selection-start-column="63" selection-end-line="71" selection-end-column="63" />
                   <folding />
                 </state>
               </provider>
@@ -154,8 +97,8 @@
           <file leaf-file-name="AdPlatform.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/java/cps/uom/edu/AdPlatform.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1241">
-                  <caret line="73" column="41" selection-start-line="73" selection-start-column="19" selection-end-line="73" selection-end-column="41" />
+                <state relative-caret-position="323">
+                  <caret line="37" column="38" selection-start-line="37" selection-start-column="29" selection-end-line="37" selection-end-column="38" />
                   <folding />
                 </state>
               </provider>
@@ -220,7 +163,6 @@
         <option value="$PROJECT_DIR$/web/WEB-INF/withdraw.jsp" />
         <option value="$PROJECT_DIR$/web/withdraw.jsp" />
         <option value="$PROJECT_DIR$/src/test/resources/Features/SuccessfulLogin.feature" />
-        <option value="$PROJECT_DIR$/web/display.jsp" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/web/index.jsp" />
         <option value="$PROJECT_DIR$/src/test/java/RunCucumberTests.java" />
@@ -228,6 +170,7 @@
         <option value="$PROJECT_DIR$/src/test/java/cucumbertest/PageTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/cucumberdemo/StepDefinitions.java" />
         <option value="$PROJECT_DIR$/src/test/resources/Features/AffiliateLogin.feature" />
+        <option value="$PROJECT_DIR$/web/display.jsp" />
         <option value="$PROJECT_DIR$/src/test/java/PageTest.java" />
       </list>
     </option>
@@ -1051,8 +994,8 @@
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="JUnit.RunCucumberTests" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.PageTest" />
-        <item index="2" class="java.lang.String" itemvalue="Tomcat Server.index.jsp" />
+        <item index="1" class="java.lang.String" itemvalue="Tomcat Server.index.jsp" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.PageTest" />
         <item index="3" class="java.lang.String" itemvalue="JUnit.All in Cps3222-Assignment" />
         <item index="4" class="java.lang.String" itemvalue="Cucumber java.Feature: AffiliateLogin" />
       </list>
@@ -1080,7 +1023,7 @@
       <workItem from="1481558260850" duration="1853000" />
       <workItem from="1482143411216" duration="2761000" />
       <workItem from="1482154816257" duration="20645000" />
-      <workItem from="1483003639892" duration="17447000" />
+      <workItem from="1483003639892" duration="18533000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Setup of Project">
       <created>1480408695481</created>
@@ -1100,18 +1043,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="RunCucumberTests - 2016.12.29 at 17h 33m 37s.xml">
-      <configuration name="RunCucumberTests" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RunCucumberTests - 2016.12.29 at 17h 35m 48s.xml">
-      <configuration name="RunCucumberTests" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RunCucumberTests - 2016.12.29 at 17h 40m 45s.xml">
-      <configuration name="RunCucumberTests" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RunCucumberTests - 2016.12.29 at 17h 41m 19s.xml">
-      <configuration name="RunCucumberTests" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="RunCucumberTests - 2016.12.29 at 17h 41m 51s.xml">
       <configuration name="RunCucumberTests" configurationId="JUnit" />
     </history-entry>
@@ -1130,9 +1061,21 @@
     <history-entry file="RunCucumberTests - 2016.12.29 at 17h 55m 49s.xml">
       <configuration name="RunCucumberTests" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="RunCucumberTests - 2016.12.29 at 18h 02m 31s.xml">
+      <configuration name="RunCucumberTests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RunCucumberTests - 2016.12.29 at 18h 03m 18s.xml">
+      <configuration name="RunCucumberTests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RunCucumberTests - 2016.12.29 at 18h 16m 21s.xml">
+      <configuration name="RunCucumberTests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RunCucumberTests - 2016.12.29 at 18h 18m 55s.xml">
+      <configuration name="RunCucumberTests" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="74277000" />
+    <option name="totallyTimeSpent" value="75363000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
@@ -1430,14 +1373,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cps/uom/edu/AdPlatform.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1241">
-          <caret line="73" column="41" selection-start-line="73" selection-start-column="19" selection-end-line="73" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/cps/uom/edu/Affiliate.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="36">
@@ -1518,26 +1453,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/display.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
-          <caret line="78" column="27" selection-start-line="78" selection-start-column="27" selection-end-line="78" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/AdPlatformTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="562">
           <caret line="66" column="0" selection-start-line="65" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/Features/AffiliateLogin.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="41" selection-start-line="10" selection-start-column="41" selection-end-line="10" selection-end-column="41" />
           <folding />
         </state>
       </provider>
@@ -1553,10 +1472,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cps/uom/edu/AdPlatform.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="37" column="38" selection-start-line="37" selection-start-column="29" selection-end-line="37" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/display.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="365">
+          <caret line="71" column="63" selection-start-line="71" selection-start-column="63" selection-end-line="71" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/Features/AffiliateLogin.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="9" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/PageTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="562">
-          <caret line="56" column="0" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
+        <state relative-caret-position="598">
+          <caret line="83" column="0" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="imports" expanded="true" />
