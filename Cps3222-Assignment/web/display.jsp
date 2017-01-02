@@ -52,10 +52,6 @@
 
                 System.out.println(id);
 
-                //String name = obtained from affiliate
-                //double balance =
-
-
                 plat.registerAffiliate(aff1);
                 plat.registerAffiliate(aff2);
                 plat.registerAffiliate(aff3);
@@ -70,7 +66,6 @@
                         System.out.println("Not Found");
                         response.sendRedirect("error.jsp");
                         return;
-                        //System.out.println("didnt redirect");
                     }
                     flag = false;
                 }
@@ -92,21 +87,8 @@
                     balance = a.getBalance();
                     System.out.println(balance);
                 }
-
-                /*else if(!plat.validator(a)){//affiliate exists
-                    //error message
-                    System.out.println("Not Found");
-                    response.sendRedirect("error.jsp");
-                    return;
-                    //System.out.println("didnt redirect");
-                }
-
-*/
                 name = a.getName();
                 balance = a.getBalance();
-
-
-                //}
             %>
 
             <tr>

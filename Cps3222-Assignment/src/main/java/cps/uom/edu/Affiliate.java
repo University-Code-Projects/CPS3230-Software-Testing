@@ -9,8 +9,6 @@ public class Affiliate {
     public AffiliateType type;
     public double balance, commissionGenerated;
 
-
-
     //getters
     public int getId() {
         return id;
@@ -89,11 +87,24 @@ public class Affiliate {
         this.id = id;
         this.password = password;
         this.name = name;
+        this.type = AffiliateType.BRONZE;
         this.commissionGenerated = 0;
     }
 
     public Affiliate(int id) {
         this.id = id;
+    }
+
+    public boolean isBronze(){
+        return (this.getType() == (AffiliateType.BRONZE));
+    }
+
+    public boolean isSilver(){
+        return (this.getType() == (AffiliateType.SILVER));
+    }
+
+    public boolean isGold(){
+        return (this.getType() == (AffiliateType.GOLD));
     }
 
     // override equals method to compare with ID

@@ -111,6 +111,8 @@ public class AdPlatform {
     public void adClicked(int affliateID){
         Affiliate aff = getAffiliate(affliateID);
         if(aff != null){
+            //aff.setBalance(aff.getBalance()+ 25);//incrementing the affiliate balance by 50c
+
             aff.setBalance(aff.getBalance()+ 0.5);//incrementing the affiliate balance by 50c
             if(aff.getType()!= AffiliateType.GOLD){//if aff is gold cannot get promoted further
                 if(aff.getBalance() >= 500){
@@ -120,6 +122,7 @@ public class AdPlatform {
                 }
             }
         }
+
         updateAffiliate(aff);
         return;
     }
