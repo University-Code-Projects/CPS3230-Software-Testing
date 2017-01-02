@@ -7,7 +7,7 @@ public class Affiliate {
     public int id;
     public String name, password;
     public AffiliateType type;
-    public double balance;
+    public double balance, commissionGenerated;
 
 
 
@@ -32,6 +32,10 @@ public class Affiliate {
         return password;
     }
 
+    public double getCommissionGenerated() {
+        return commissionGenerated;
+    }
+
     //setters
     public void setId(int id) {
         this.id = id;
@@ -53,11 +57,16 @@ public class Affiliate {
         this.password = password;
     }
 
+    public void setCommissionGenerated(double commissionGenerated) {
+        this.commissionGenerated = commissionGenerated;
+    }
+
     public Affiliate(int id, String name, AffiliateType type, double balance) {
         this.id = id;
         this.name = name;
         this.type = AffiliateType.BRONZE;
         this.balance = 0;
+        this.commissionGenerated = 0;
     }
 
     public Affiliate(int id, String name, double balance) {
@@ -65,6 +74,7 @@ public class Affiliate {
         this.name = name;
         this.type = AffiliateType.BRONZE;
         this.balance = 0;
+        this.commissionGenerated = 0;
     }
 
     public Affiliate(int id, String password) {
@@ -72,12 +82,14 @@ public class Affiliate {
         this.password = password;
         this.type = AffiliateType.BRONZE;
         this.balance = 0;
+        this.commissionGenerated = 0;
     }
 
     public Affiliate(int id, String password, String name) {
         this.id = id;
         this.password = password;
         this.name = name;
+        this.commissionGenerated = 0;
     }
 
     public Affiliate(int id) {

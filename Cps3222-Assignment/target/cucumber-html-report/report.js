@@ -33,21 +33,21 @@ formatter.match({
   "location": "PageTest.login()"
 });
 formatter.result({
-  "duration": 4543351790,
+  "duration": 4873286743,
   "status": "passed"
 });
 formatter.match({
   "location": "PageTest.validLogin()"
 });
 formatter.result({
-  "duration": 163908851,
+  "duration": 460292918,
   "status": "passed"
 });
 formatter.match({
   "location": "PageTest.takenAdminPage()"
 });
 formatter.result({
-  "duration": 1075696877,
+  "duration": 3200896973,
   "status": "passed"
 });
 formatter.scenario({
@@ -82,28 +82,28 @@ formatter.match({
   "location": "PageTest.login()"
 });
 formatter.result({
-  "duration": 3268549687,
+  "duration": 3173783983,
   "status": "passed"
 });
 formatter.match({
   "location": "PageTest.invalidLogin()"
 });
 formatter.result({
-  "duration": 182300642,
+  "duration": 399557929,
   "status": "passed"
 });
 formatter.match({
   "location": "PageTest.errorMsg()"
 });
 formatter.result({
-  "duration": 23561755,
+  "duration": 34833847,
   "status": "passed"
 });
 formatter.match({
   "location": "PageTest.samePage()"
 });
 formatter.result({
-  "duration": 3172126398,
+  "duration": 2982358192,
   "status": "passed"
 });
 formatter.scenario({
@@ -138,28 +138,28 @@ formatter.match({
   "location": "PageTest.loggedIn()"
 });
 formatter.result({
-  "duration": 3309108837,
+  "duration": 3076993400,
   "status": "passed"
 });
 formatter.match({
   "location": "PageTest.adminAccoutAccess()"
 });
 formatter.result({
-  "duration": 49486,
+  "duration": 43987,
   "status": "passed"
 });
 formatter.match({
   "location": "PageTest.seeBalance()"
 });
 formatter.result({
-  "duration": 37740303,
+  "duration": 585503278,
   "status": "passed"
 });
 formatter.match({
   "location": "PageTest.withdrawButton()"
 });
 formatter.result({
-  "duration": 3162914373,
+  "duration": 3249775207,
   "status": "passed"
 });
 formatter.scenario({
@@ -199,35 +199,33 @@ formatter.match({
   "location": "PageTest.loggedIn()"
 });
 formatter.result({
-  "duration": 3213829582,
+  "duration": 3168068942,
   "status": "passed"
 });
 formatter.match({
   "location": "PageTest.checkBalance()"
 });
 formatter.result({
-  "duration": 50468005,
-  "status": "passed"
+  "duration": 550294806,
+  "error_message": "java.lang.AssertionError: expected:\u003c0.0\u003e but was:\u003c9.0\u003e\r\n\tat org.junit.Assert.fail(Assert.java:88)\r\n\tat org.junit.Assert.failNotEquals(Assert.java:834)\r\n\tat org.junit.Assert.assertEquals(Assert.java:553)\r\n\tat org.junit.Assert.assertEquals(Assert.java:683)\r\n\tat PageTest.checkBalance(PageTest.java:127)\r\n\tat ✽.And my balance is \u003cbalance\u003e(Features/AffiliateLogin.feature:21)\r\n",
+  "status": "failed"
 });
 formatter.match({
   "location": "PageTest.withdrawBalance()"
 });
 formatter.result({
-  "duration": 91865113,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "PageTest.seeMessage()"
 });
 formatter.result({
-  "duration": 38609418,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "PageTest.newBalance()"
 });
 formatter.result({
-  "duration": 3162506026,
-  "status": "passed"
+  "status": "skipped"
 });
 });

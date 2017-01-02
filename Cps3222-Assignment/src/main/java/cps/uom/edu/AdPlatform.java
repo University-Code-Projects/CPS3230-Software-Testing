@@ -84,6 +84,7 @@ public class AdPlatform {
             }else{//type is bronze
                 comm = affiliate.getBalance() * 0.1;
             }
+            affiliate.setCommissionGenerated(affiliate.getCommissionGenerated() + comm);
             System.out.println("Balance withdrawn: "+ (affiliate.getBalance() - comm));
             System.out.println("Commission on withdrawal: "+ comm);
             affiliate.setBalance(0);

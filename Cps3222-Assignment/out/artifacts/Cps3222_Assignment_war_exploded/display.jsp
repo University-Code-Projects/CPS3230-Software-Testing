@@ -20,6 +20,10 @@
     private String name = "";
     private double balance = 0.0;
     private boolean flag = false;
+    AdPlatform plat = new AdPlatform();
+    Affiliate aff1 = new Affiliate(1,"pass1","Client1");
+    Affiliate aff2 = new Affiliate(2,"pass2","Client2");
+    Affiliate aff3 = new Affiliate(3,"pass3","Client3");
 %>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -35,10 +39,10 @@
                 String idS = request.getParameter("id");//cannot be
 
                 try {
+
                     id = Integer.parseInt(idS);
                     a = new Affiliate(id, pass);
                     pass = request.getParameter("pass");
-                    System.out.println(pass);
                     flag = true;
                 } catch(Exception e) {
                     if(id < 0) {
@@ -50,16 +54,13 @@
 
                 //String name = obtained from affiliate
                 //double balance =
-                AdPlatform plat = new AdPlatform();
-                Affiliate aff1 = new Affiliate(1,"pass1","Client1");
-                Affiliate aff2 = new Affiliate(2,"pass2","Client2");
-                Affiliate aff3 = new Affiliate(3,"pass3","Client3");
+
 
                 plat.registerAffiliate(aff1);
                 plat.registerAffiliate(aff2);
                 plat.registerAffiliate(aff3);
                 String x = request.getParameter("Withdraw");
-
+                String y = request.getParameter("Ad");
                 if(flag){
                     a = new Affiliate(id,pass);
                     if(plat.validator(a)){
@@ -70,9 +71,6 @@
                         response.sendRedirect("error.jsp");
                         return;
                         //System.out.println("didnt redirect");
-                    }
-                    for (int i = 0; i<9; i++){
-                        plat.adClicked(id);
                     }
                     flag = false;
                 }
@@ -87,6 +85,14 @@
                     session.setAttribute("newBalance", balance);
                     response.sendRedirect("withdraw.jsp");
                 }
+
+                if ("Ad".equals(y)){
+                    plat.adClicked(id);
+                    plat.updateAffiliate(a);
+                    balance = a.getBalance();
+                    System.out.println(balance);
+                }
+
                 /*else if(!plat.validator(a)){//affiliate exists
                     //error message
                     System.out.println("Not Found");
@@ -117,8 +123,8 @@
             </tr>
             </tbody>
         </table>
-
         <input type="submit" value="Withdraw" name="Withdraw" />
+        <input type="submit" value="Ad" name="Ad" />
     </form>
     </body>
 </html>

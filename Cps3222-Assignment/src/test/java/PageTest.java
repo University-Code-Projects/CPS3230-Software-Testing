@@ -11,8 +11,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class PageTest {
     WebDriver driver;
     AdPlatform plat = null;
-    Affiliate aff = null;
-    Affiliate aff2 = null;
+    Affiliate aff =  new Affiliate(1,"pass1","Client1");
+    Affiliate aff2 =  new Affiliate(2,"pass2","Client2");
 
     public void sleep(int seconds) {
         try {
@@ -28,7 +28,7 @@ public class PageTest {
     @Given("^I am an affiliate trying to log in$")
     public void login()throws Throwable{
         plat = new AdPlatform();
-        aff = new Affiliate(1,"pass1","Client1");
+        //aff = new Affiliate(1,"pass1","Client1");
         plat.registerAffiliate(aff);
         driver.get("http://localhost:9515/index.jsp");
         driver.findElement(By.name("id")).sendKeys("1");
@@ -87,7 +87,7 @@ public class PageTest {
     @Given("^I am a logged in affiliate$")
     public void loggedIn()throws Throwable{
         plat = new AdPlatform();
-        aff2 = new Affiliate(2,"pass2","Client2");
+        //aff2 = new Affiliate(2,"pass2","Client2");
         plat.registerAffiliate(aff2);
         driver.get("http://localhost:9515/index.jsp");
         driver.findElement(By.name("id")).sendKeys("2");
@@ -105,8 +105,8 @@ public class PageTest {
         //sleep(1);
         for (int i = 0; i<9; i++){
             plat.adClicked(2);              //to equal balance in website
+            driver.findElement(By.name("Ad")).click();
         }
-        plat.updateAffiliate(aff2);
         assertEquals(aff2.getBalance(),(Double.parseDouble(driver.findElement(By.className("balance")).getText())),0.01);
     }
 
@@ -121,9 +121,8 @@ public class PageTest {
     @And("^my balance is <balance>$")
     public void checkBalance() throws Throwable {
         for (int i = 0; i<9; i++){
-            plat.adClicked(2);              //to equal balance in website
+           plat.adClicked(2);              //to equal balance in website
         }
-        plat.updateAffiliate(aff2);
         assertEquals(aff2.getBalance(),(Double.parseDouble(driver.findElement(By.className("balance")).getText())),0.01);
     }
 
