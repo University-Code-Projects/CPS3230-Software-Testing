@@ -3,23 +3,16 @@
  */
 import cps.uom.edu.AdPlatform;
 import cps.uom.edu.Affiliate;
-import cucumber.api.java.en.And;
-import cucumber.api.java.en.Given;
-import cucumber.api.java.en.Then;
-import cucumber.api.java.en.When;
-import org.junit.After;
-import org.junit.Before;
-import org.junit.Test;
+import cucumber.api.java.en.*;
 import static org.junit.Assert.*;
-import org.openqa.selenium.By;
-import org.openqa.selenium.NoAlertPresentException;
-import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class PageTest {
     WebDriver driver;
     AdPlatform plat = null;
     Affiliate aff = null;
+    Affiliate aff2 = null;
 
     public void sleep(int seconds) {
         try {
@@ -36,6 +29,11 @@ public class PageTest {
     public void login()throws Throwable{
         plat = new AdPlatform();
         aff = new Affiliate(1,"pass1","Client1");
+        plat.registerAffiliate(aff);
+        driver.get("http://localhost:9515/index.jsp");
+        driver.findElement(By.name("id")).sendKeys("1");
+        driver.findElement(By.name("pass")).sendKeys("pass1");
+        driver.findElement(By.name("submit")).click();
     }
 
     @When("^I login using valid credentials$")
@@ -86,7 +84,66 @@ public class PageTest {
         driver.quit();
     }
 
+    @Given("^I am a logged in affiliate$")
+    public void loggedIn()throws Throwable{
+        plat = new AdPlatform();
+        aff2 = new Affiliate(2,"pass2","Client2");
+        plat.registerAffiliate(aff2);
+        driver.get("http://localhost:9515/index.jsp");
+        driver.findElement(By.name("id")).sendKeys("2");
+        driver.findElement(By.name("pass")).sendKeys("pass2");
+        driver.findElement(By.name("submit")).click();
+    }
 
+    @When("^I visit my account admin page$")
+    public void adminAccoutAccess() throws Throwable{
+        assertEquals(true,(2 == aff2.getId())&&(aff2.getPassword().equals("pass2")));
+    }
 
+    @Then("^I should see my balance$")
+    public void seeBalance() throws Throwable{
+        //sleep(1);
+        for (int i = 0; i<9; i++){
+            plat.adClicked(2);              //to equal balance in website
+        }
+        plat.updateAffiliate(aff2);
+        assertEquals(aff2.getBalance(),(Double.parseDouble(driver.findElement(By.className("balance")).getText())),0.01);
+    }
 
+    @And("^I should see a button allowing me to withdraw my balance$")
+    public void withdrawButton() throws Throwable{
+        //sleep(1);
+        assertEquals(true, driver.findElements(By.name("Withdraw")).size()>0);
+        driver.close();
+        driver.quit();
+    }
+
+    @And("^my balance is <balance>$")
+    public void checkBalance() throws Throwable {
+        for (int i = 0; i<9; i++){
+            plat.adClicked(2);              //to equal balance in website
+        }
+        plat.updateAffiliate(aff2);
+        assertEquals(aff2.getBalance(),(Double.parseDouble(driver.findElement(By.className("balance")).getText())),0.01);
+    }
+
+    @When("^I try to withdraw my balance$")
+    public void withdrawBalance() throws Throwable{
+        driver.findElement(By.name("Withdraw")).click();
+        assertEquals("http://localhost:9515/withdraw.jsp",driver.getCurrentUrl());
+    }
+
+    @Then("^I should see a message indicating <message-type>$")
+    public void seeMessage() throws Throwable{
+        assertEquals("|Error", driver.findElement(By.className("msg")).getText());
+        //assertEquals(aff2.getBalance(),(Double.parseDouble(driver.findElement(By.className("balance")).getText())),0.01);
+    }
+
+    @And("^my new balance will be <new-balance>$")
+    public void newBalance() throws Throwable{
+        String result = "|"+String.valueOf(aff2.getBalance());
+        assertEquals(result,driver.findElement(By.className("newBalance")).getText());
+        driver.close();
+        driver.quit();
+    }
 }

@@ -105,15 +105,15 @@
 
             <tr>
                 <td>Affiliate Id : </td>
-                <td><%= id %></td>
+                <td class="id"><%= id %></td>
             </tr>
             <tr>
                 <td>Affiliate Name : </td>
-                <td><%= name %></td>
+                <td class="name"><%= name %></td>
             </tr>
             <tr>
                 <td>Affiliate Balance : </td>
-                <td><%= balance %></td>
+                <td class="balance"> <%= balance %></td>
             </tr>
             </tbody>
         </table>

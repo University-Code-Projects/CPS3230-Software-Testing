@@ -43,9 +43,9 @@
             }
         %>
         <tr>
-            <td><%= balance %></td>
-            <td>|<%= msg %> </td>
-            <td>|<%= newBalance %> </td>
+            <td class="balance"><%= balance %></td>
+            <td class="msg">|<%= msg %> </td>
+            <td class="newBalance">|<%= newBalance %> </td>
         </tr>
         </tbody>
     </table>
