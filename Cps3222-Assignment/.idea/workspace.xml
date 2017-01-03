@@ -4,35 +4,17 @@
     <list default="true" id="2084a58c-fad0-4023-a001-4b26effad927" name="Default" comment="">
       <change type="NEW" beforePath="" afterPath="$APPLICATION_CONFIG_DIR$/options/find.xml" />
       <change type="NEW" beforePath="" afterPath="$APPLICATION_CONFIG_DIR$/options/window.state.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__asm_asm_3_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__colt_colt_1_2_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__concurrent_concurrent_1_3_4.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_sf_jung_jung_algorithms_2_0_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_sf_jung_jung_api_2_0_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_sf_jung_jung_graph_impl_2_0_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_sf_jung_jung_io_2_0_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_sf_jung_jung_jai_2_0_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_sf_jung_jung_visualization_2_0_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_sourceforge_collections_collections_generic_4_01.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__nz_ac_waikato_modeljunit_modeljunit_2_5.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_woodstox_wstx_asl_3_2_6.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_uispec4j_uispec4j_jdk16_2_4.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__stax_stax_api_1_0_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/AffiliateModel.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/AffiliateStates.java" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../cucumberdemo/.idea/compiler.xml" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../cucumberdemo/.idea/copyright/profiles_settings.xml" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../cucumberdemo/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/cps/uom/edu/AdPlatform.class" afterPath="$PROJECT_DIR$/target/classes/cps/uom/edu/AdPlatform.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/cps/uom/edu/Affiliate.class" afterPath="$PROJECT_DIR$/target/classes/cps/uom/edu/Affiliate.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/PageTest.class" afterPath="$PROJECT_DIR$/target/test-classes/PageTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/AffiliateModel.class" afterPath="$PROJECT_DIR$/target/test-classes/AffiliateModel.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/AffiliateStates.class" afterPath="$PROJECT_DIR$/target/test-classes/AffiliateStates.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Cps3222-Assignment.iml" afterPath="$PROJECT_DIR$/Cps3222-Assignment.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Cps3222_Assignment_war_exploded/display.jsp" afterPath="$PROJECT_DIR$/out/artifacts/Cps3222_Assignment_war_exploded/display.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/cps/uom/edu/AdPlatform.java" afterPath="$PROJECT_DIR$/src/main/java/cps/uom/edu/AdPlatform.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/cps/uom/edu/Affiliate.java" afterPath="$PROJECT_DIR$/src/main/java/cps/uom/edu/Affiliate.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/display.jsp" afterPath="$PROJECT_DIR$/web/display.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/AffiliateModel.java" afterPath="$PROJECT_DIR$/src/test/java/AffiliateModel.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/AffiliateStates.java" afterPath="$PROJECT_DIR$/src/test/java/AffiliateStates.java" />
     </list>
     <ignored path="Cps3222-Assignment.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -61,15 +43,12 @@
     <splitter split-orientation="horizontal" split-proportion="0.43956044">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="PageTest.java" pinned="false" current-in-tab="true">
+          <file leaf-file-name="PageTest.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/test/java/PageTest.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-221">
-                  <caret line="14" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-                  <folding>
-                    <element signature="n#!!doc" expanded="true" />
-                    <element signature="imports" expanded="true" />
-                  </folding>
+                <state relative-caret-position="646">
+                  <caret line="45" column="41" selection-start-line="45" selection-start-column="41" selection-end-line="45" selection-end-column="41" />
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -84,6 +63,38 @@
               </provider>
             </entry>
           </file>
+          <file leaf-file-name="AdPlatform.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/cps/uom/edu/AdPlatform.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="323">
+                  <caret line="103" column="45" selection-start-line="103" selection-start-column="39" selection-end-line="103" selection-end-column="45" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/pom.xml">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="241">
+                  <caret line="55" column="54" selection-start-line="55" selection-start-column="54" selection-end-line="55" selection-end-column="54" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Affiliate.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/cps/uom/edu/Affiliate.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="530">
+                  <caret line="98" column="0" selection-start-line="98" selection-start-column="0" selection-end-line="98" selection-end-column="0" />
+                  <folding>
+                    <element signature="e#2225#2226#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
         </leaf>
       </split-first>
       <split-second>
@@ -91,8 +102,8 @@
           <file leaf-file-name="AffiliateModel.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/test/java/AffiliateModel.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="51">
-                  <caret line="93" column="0" selection-start-line="93" selection-start-column="0" selection-end-line="93" selection-end-column="0" />
+                <state relative-caret-position="184">
+                  <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -103,18 +114,8 @@
           <file leaf-file-name="AffiliateStates.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/test/java/AffiliateStates.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="85">
-                  <caret line="5" column="11" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="AdPlatform.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/cps/uom/edu/AdPlatform.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="442">
-                  <caret line="115" column="12" selection-start-line="115" selection-start-column="12" selection-end-line="115" selection-end-column="12" />
+                <state relative-caret-position="170">
+                  <caret line="10" column="12" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
                   <folding />
                 </state>
               </provider>
@@ -186,8 +187,8 @@
         <option value="$PROJECT_DIR$/src/test/java/PageTest.java" />
         <option value="$PROJECT_DIR$/web/display.jsp" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/test/java/AffiliateStates.java" />
         <option value="$PROJECT_DIR$/src/main/java/cps/uom/edu/Affiliate.java" />
+        <option value="$PROJECT_DIR$/src/test/java/AffiliateStates.java" />
         <option value="$PROJECT_DIR$/src/main/java/cps/uom/edu/AdPlatform.java" />
         <option value="$PROJECT_DIR$/src/test/java/AffiliateModel.java" />
       </list>
@@ -249,9 +250,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -410,6 +408,9 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -420,7 +421,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Testing_example" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../performanceTesting/lib/resources_en.jar!/" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
   </component>
   <component name="RecentsManager">
@@ -1046,7 +1047,8 @@
       <workItem from="1483003639892" duration="19395000" />
       <workItem from="1483289140999" duration="16899000" />
       <workItem from="1483373699891" duration="22000" />
-      <workItem from="1483373770894" duration="6067000" />
+      <workItem from="1483373770894" duration="12323000" />
+      <workItem from="1483459610878" duration="2991000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Setup of Project">
       <created>1480408695481</created>
@@ -1066,39 +1068,39 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="AffiliateModel - 2017.01.02 at 18h 51m 07s.xml">
+    <history-entry file="AffiliateModel - 2017.01.03 at 17h 18m 04s.xml">
       <configuration name="AffiliateModel" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AffiliateModel - 2017.01.02 at 18h 51m 19s.xml">
+    <history-entry file="AffiliateModel - 2017.01.03 at 17h 18m 39s.xml">
       <configuration name="AffiliateModel" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AffiliateModel - 2017.01.02 at 18h 51m 56s.xml">
+    <history-entry file="AffiliateModel - 2017.01.03 at 17h 20m 52s.xml">
       <configuration name="AffiliateModel" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AffiliateModel - 2017.01.02 at 18h 52m 22s.xml">
+    <history-entry file="AffiliateModel - 2017.01.03 at 17h 21m 33s.xml">
       <configuration name="AffiliateModel" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AffiliateModel - 2017.01.02 at 18h 53m 08s.xml">
+    <history-entry file="AffiliateModel - 2017.01.03 at 17h 22m 05s.xml">
       <configuration name="AffiliateModel" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AffiliateModel - 2017.01.02 at 18h 54m 25s.xml">
+    <history-entry file="AffiliateModel - 2017.01.03 at 17h 22m 26s.xml">
       <configuration name="AffiliateModel" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AffiliateModel - 2017.01.02 at 18h 54m 53s.xml">
+    <history-entry file="AffiliateModel - 2017.01.03 at 17h 23m 07s.xml">
       <configuration name="AffiliateModel" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AffiliateModel - 2017.01.02 at 18h 55m 23s.xml">
+    <history-entry file="AffiliateModel - 2017.01.03 at 17h 23m 34s.xml">
       <configuration name="AffiliateModel" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AffiliateModel - 2017.01.02 at 18h 55m 38s.xml">
+    <history-entry file="AffiliateModel - 2017.01.03 at 17h 23m 49s.xml">
       <configuration name="AffiliateModel" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AffiliateModel - 2017.01.02 at 18h 56m 03s.xml">
+    <history-entry file="AffiliateModel - 2017.01.03 at 17h 24m 18s.xml">
       <configuration name="AffiliateModel" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="99213000" />
+    <option name="totallyTimeSpent" value="108460000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
@@ -1121,6 +1123,7 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.146875" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1132,7 +1135,6 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39957717" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18697916" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -1393,25 +1395,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="901">
-          <caret line="53" column="21" selection-start-line="53" selection-start-column="21" selection-end-line="53" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/PageTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-221">
-          <caret line="14" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/cps/uom/edu/AdProvider.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -1426,33 +1409,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cps/uom/edu/Affiliate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="139">
-          <caret line="98" column="0" selection-start-line="98" selection-start-column="0" selection-end-line="98" selection-end-column="0" />
-          <folding>
-            <element signature="e#2225#2226#0" expanded="true" />
-            <element signature="e#2257#2258#0" expanded="true" />
-            <element signature="e#2322#2323#0" expanded="true" />
-            <element signature="e#2352#2353#0" expanded="true" />
-            <element signature="e#2415#2416#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/cps/uom/edu/AffiliateType.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="25" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/AffiliateStates.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="11" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1460,7 +1420,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1468,7 +1427,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="11" column="171" selection-start-line="11" selection-start-column="171" selection-end-line="11" selection-end-column="171" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1476,13 +1434,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
-          <folding>
-            <element signature="e#1273#1274#0" expanded="true" />
-            <element signature="e#1301#1302#0" expanded="true" />
-            <element signature="e#1334#1335#0" expanded="true" />
-            <element signature="e#1358#1359#0" expanded="true" />
-            <element signature="e#1419#1420#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1507,7 +1458,7 @@
         <state relative-caret-position="400">
           <caret line="127" column="0" selection-start-line="127" selection-start-column="0" selection-end-line="127" selection-end-column="0" />
           <folding>
-            <element signature="e#3587#3588#0" expanded="true" />
+            <element signature="e#3587#3588#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1516,7 +1467,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="299">
           <caret line="311" column="0" selection-start-line="311" selection-start-column="0" selection-end-line="311" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1524,28 +1474,58 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="482" column="0" selection-start-line="482" selection-start-column="0" selection-end-line="482" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/PageTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="45" column="41" selection-start-line="45" selection-start-column="41" selection-end-line="45" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/AffiliateStates.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="12" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cps/uom/edu/Affiliate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="530">
+          <caret line="98" column="0" selection-start-line="98" selection-start-column="0" selection-end-line="98" selection-end-column="0" />
           <folding>
-            <element signature="e#6005#6006#0" expanded="true" />
-            <element signature="e#6031#6032#0" expanded="true" />
+            <element signature="e#2225#2226#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/AffiliateModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/cps/uom/edu/AdPlatform.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="115" column="12" selection-start-line="115" selection-start-column="12" selection-end-line="115" selection-end-column="12" />
+        <state relative-caret-position="323">
+          <caret line="103" column="45" selection-start-line="103" selection-start-column="39" selection-end-line="103" selection-end-column="45" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/AffiliateModel.java">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="93" column="0" selection-start-line="93" selection-start-column="0" selection-end-line="93" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="241">
+          <caret line="55" column="54" selection-start-line="55" selection-start-column="54" selection-end-line="55" selection-end-column="54" />
+          <folding />
         </state>
       </provider>
     </entry>

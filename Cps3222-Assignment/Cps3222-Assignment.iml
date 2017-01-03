@@ -76,5 +76,14 @@
     <orderEntry type="library" name="Maven: net.sf.jung:jung-jai:2.0.1" level="project" />
     <orderEntry type="library" name="Maven: net.sf.jung:jung-visualization:2.0.1" level="project" />
     <orderEntry type="library" name="Maven: org.uispec4j:uispec4j:jdk16:2.4" level="project" />
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../performanceTesting/lib/performanceTesting.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
   </component>
 </module>

@@ -7,5 +7,6 @@ public enum AffiliateStates {
     ADSILVER,
     SILVER,
     ADGOLD,
-    GOLD
+    GOLD,
+    WITHDRAW
 }

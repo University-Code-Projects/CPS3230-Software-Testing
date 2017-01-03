@@ -122,7 +122,6 @@ public class AdPlatform {
                 }
             }
         }
-
         updateAffiliate(aff);
         return;
     }
