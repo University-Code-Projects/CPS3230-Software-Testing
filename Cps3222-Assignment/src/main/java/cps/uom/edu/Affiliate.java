@@ -74,7 +74,7 @@ public class Affiliate {
         this.balance = 0;
         this.commissionGenerated = 0;
     }
-
+/*
     public Affiliate(int id, String password) {
         this.id = id;
         this.password = password;
@@ -82,7 +82,7 @@ public class Affiliate {
         this.balance = 0;
         this.commissionGenerated = 0;
     }
-
+*/
     public Affiliate(int id, String password, String name) {
         this.id = id;
         this.password = password;

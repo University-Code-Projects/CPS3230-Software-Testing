@@ -8,11 +8,11 @@ import java.awt.*;
  */
 public class AdFormat {
 
-    public MediaType mediaType;
-    public Dimension dimensions;
-    public Keywords keywords;
+    private MediaType mediaType;
+    private Dimension dimensions;
+    private Keywords keywords;
 
-    /*
+
     public MediaType getMediaType() {
         return mediaType;
     }
@@ -37,7 +37,6 @@ public class AdFormat {
         this.keywords = keywords;
     }
 
-    */
     public AdFormat(MediaType mediaType, Dimension dimensions, Keywords keywords) {
         this.mediaType = mediaType;
         this.dimensions = dimensions;

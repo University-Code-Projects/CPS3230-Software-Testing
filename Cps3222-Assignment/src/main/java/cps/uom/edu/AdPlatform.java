@@ -34,7 +34,7 @@ public class AdPlatform {
         return null;
     }
 
-    //updating the instance worked on to the collection
+    //Checking that the affiliate given has an id and password which is found withing the system
     public boolean validator(Affiliate a){
         for (Affiliate aff : affiliates){
             if(aff.getId() == a.getId()){
