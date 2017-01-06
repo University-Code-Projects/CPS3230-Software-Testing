@@ -28,12 +28,7 @@ public class PageTest {
     @Given("^I am an affiliate trying to log in$")
     public void login()throws Throwable{
         plat = new AdPlatform();
-        //aff = new Affiliate(1,"pass1","Client1");
         plat.registerAffiliate(aff);
-        driver.get("http://localhost:9515/index.jsp");
-        driver.findElement(By.name("id")).sendKeys("1");
-        driver.findElement(By.name("pass")).sendKeys("pass1");
-        driver.findElement(By.name("submit")).click();
     }
 
     @When("^I login using valid credentials$")
@@ -97,7 +92,7 @@ public class PageTest {
 
     @When("^I visit my account admin page$")
     public void adminAccoutAccess() throws Throwable{
-        assertEquals(true,(2 == aff2.getId())&&(aff2.getPassword().equals("pass2")));
+        assertEquals(true,((Integer.parseInt(driver.findElement(By.className("id")).getText())) == aff2.getId()));
     }
 
     @Then("^I should see my balance$")

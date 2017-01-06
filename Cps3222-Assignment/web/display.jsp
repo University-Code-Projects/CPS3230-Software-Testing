@@ -39,9 +39,7 @@
                 String idS = request.getParameter("id");//cannot be
 
                 try {
-
                     id = Integer.parseInt(idS);
-                    a = new Affiliate(id, pass);
                     pass = request.getParameter("pass");
                     flag = true;
                 } catch(Exception e) {
@@ -58,7 +56,7 @@
                 String x = request.getParameter("Withdraw");
                 String y = request.getParameter("Ad");
                 if(flag){
-                    a = new Affiliate(id,pass);
+                    a = new Affiliate(id,pass,"");
                     if(plat.validator(a)){
                         a = plat.getAffiliate(id);
                     }else{

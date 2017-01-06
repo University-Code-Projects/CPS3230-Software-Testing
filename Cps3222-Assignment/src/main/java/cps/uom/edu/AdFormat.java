@@ -16,10 +16,10 @@ public class AdFormat {
     public MediaType getMediaType() {
         return mediaType;
     }
+
     public void setMediaType(MediaType mediaType) {
         this.mediaType = mediaType;
     }
-
 
     public Dimension getDimensions() {
         return dimensions;

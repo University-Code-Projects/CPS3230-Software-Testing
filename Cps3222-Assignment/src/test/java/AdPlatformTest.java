@@ -16,7 +16,6 @@ import static org.mockito.Mockito.when;
 public class AdPlatformTest {
     AdPlatform adPlatform;
 
-
     @Before
     public void setUp() throws Exception {
        adPlatform = new AdPlatform();
@@ -33,7 +32,7 @@ public class AdPlatformTest {
         assertEquals(true,adPlatform.registerAffiliate(aff));
     }
 
-    @Test//adding an element for the second time to a collection
+    @Test//adding an element for the second time to a collection - Test Double
     public void registerAffiliateFalse() throws Exception {
         Affiliate aff = new Affiliate(1,"Client", AffiliateType.GOLD,5);
         adPlatform.registerAffiliate(aff);
@@ -48,7 +47,7 @@ public class AdPlatformTest {
         assertEquals(AffiliateType.BRONZE,adPlatform.getAffiliatesType(1));
     }
 
-    @Test//checking that the default type is bronze when type not given
+    @Test//checking that the default type is bronze when type not given - Test Double
     public void registerAffiliateTypeDefault() throws Exception {
         Affiliate aff = new Affiliate(1,"Client", 5);
         adPlatform.registerAffiliate(aff);
@@ -69,7 +68,7 @@ public class AdPlatformTest {
         assertEquals(true,adPlatform.validator(aff1));
     }
 
-    @Test//checking that the affiliate does not exist with same id and different password
+    @Test//checking that the affiliate does not exist with same id and different password - Test Double
     public void validateAffiliateFalse() throws Exception {
         Affiliate aff = new Affiliate(1,"pass1", "Client1");
         adPlatform.registerAffiliate(aff);
@@ -84,7 +83,7 @@ public class AdPlatformTest {
         assertEquals(aff,adPlatform.getAffiliate(1));
     }
 
-    @Test//checking that the affiliate returned does not exist in the collection
+    @Test//checking that the affiliate returned does not exist in the collection - Test Double
     public void getAffiliateFalse() throws Exception {
         Affiliate aff = new Affiliate(1,"Client", 5);
         adPlatform.registerAffiliate(aff);
@@ -98,7 +97,7 @@ public class AdPlatformTest {
         assertEquals(true,adPlatform.updateAffiliate(new Affiliate(1,"Client", 5.5)));
     }
 
-    @Test//checking that the balance was unsuccessfully updated in the object
+    @Test//checking that the balance was unsuccessfully updated in the object - Test Double
     public void updateAffiliateFalse() throws Exception {
         Affiliate aff = new Affiliate(1,"Client", 5);
         adPlatform.registerAffiliate(aff);
@@ -123,7 +122,7 @@ public class AdPlatformTest {
         assertEquals(AffiliateType.SILVER,adPlatform.getAffiliatesType(1));
     }
 
-    @Test//Checking affiliate is still bronze at 49.50 (bounds)
+    @Test//Checking affiliate is still bronze at 49.50 (bounds) - Test Double
     public void affiliateTypeSilverFalse() throws Exception {
         Affiliate aff = new Affiliate(1,"Client", 5);
         adPlatform.registerAffiliate(aff);
@@ -145,7 +144,7 @@ public class AdPlatformTest {
         assertEquals(AffiliateType.GOLD,adPlatform.getAffiliatesType(1));
     }
 
-    @Test//Checking affiliate is still bronze at 499.50 (bounds)
+    @Test//Checking affiliate is still bronze at 499.50 (bounds) - Test Double
     public void affiliateTypeGoldFalse() throws Exception {
         Affiliate aff = new Affiliate(1,"Client", 5);
         adPlatform.registerAffiliate(aff);
@@ -166,7 +165,7 @@ public class AdPlatformTest {
         assertEquals(false,adPlatform.settleAffiliateBalance(aff));
     }
 
-    @Test//Setting Balance when affiliate has more than 5 credit, resulting true
+    @Test//Setting Balance when affiliate has more than 5 credit, resulting true - Test Double
     public void affiliateSetBalanceBronze() throws Exception {
         Affiliate aff = new Affiliate(1, "Client", 5);
         adPlatform.registerAffiliate(aff);
@@ -178,7 +177,7 @@ public class AdPlatformTest {
         assertEquals(true, adPlatform.settleAffiliateBalance(aff));
     }
 
-    @Test//Setting Balance when affiliate has more than 50 credit, resulting true
+    @Test//Setting Balance when affiliate has more than 50 credit, resulting true - Test Double
     public void affiliateSetBalanceSilver() throws Exception {
         Affiliate aff = new Affiliate(1, "Client", 5);
         adPlatform.registerAffiliate(aff);
@@ -190,7 +189,7 @@ public class AdPlatformTest {
         assertEquals(true, adPlatform.settleAffiliateBalance(aff));
     }
 
-    @Test//Setting Balance when affiliate has more than 500 credit, resulting true
+    @Test//Setting Balance when affiliate has more than 500 credit, resulting true - Test Double
     public void affiliateSetBalanceGold() throws Exception {
         Affiliate aff = new Affiliate(1, "Client", 5);
         adPlatform.registerAffiliate(aff);
@@ -202,9 +201,8 @@ public class AdPlatformTest {
         assertEquals(true, adPlatform.settleAffiliateBalance(aff));
     }
 
-
     //going to test serveAdvert
-    //going to use mock tests
+    //going to use mock tests??
     @Test//testing serveAdvert
     public void affiliateServeAdvertTrue() throws Exception {
         Keywords keys = new Keywords();
@@ -218,7 +216,7 @@ public class AdPlatformTest {
         assertEquals(true, adPlatform.serveAdvert(desc));
     }
 
-    @Test//testing serveAdvert
+    @Test//testing serveAdvert - Test Double
     public void addProviderToListTrue() throws Exception {
         Keywords keys = new Keywords();
         keys.addKeys("BLACK");

@@ -4,10 +4,10 @@ package cps.uom.edu;
  * Created by jonathan on 29/11/2016.
  */
 public class Affiliate {
-    public int id;
-    public String name, password;
-    public AffiliateType type;
-    public double balance, commissionGenerated;
+    private int id;
+    private String name, password;
+    private AffiliateType type;
+    private double balance, commissionGenerated;
 
     //getters
     public int getId() {
@@ -59,42 +59,6 @@ public class Affiliate {
         this.commissionGenerated = commissionGenerated;
     }
 
-    public Affiliate(int id, String name, AffiliateType type, double balance) {
-        this.id = id;
-        this.name = name;
-        this.type = AffiliateType.BRONZE;
-        this.balance = 0;
-        this.commissionGenerated = 0;
-    }
-
-    public Affiliate(int id, String name, double balance) {
-        this.id = id;
-        this.name = name;
-        this.type = AffiliateType.BRONZE;
-        this.balance = 0;
-        this.commissionGenerated = 0;
-    }
-/*
-    public Affiliate(int id, String password) {
-        this.id = id;
-        this.password = password;
-        this.type = AffiliateType.BRONZE;
-        this.balance = 0;
-        this.commissionGenerated = 0;
-    }
-*/
-    public Affiliate(int id, String password, String name) {
-        this.id = id;
-        this.password = password;
-        this.name = name;
-        this.type = AffiliateType.BRONZE;
-        this.commissionGenerated = 0;
-    }
-
-    public Affiliate(int id) {
-        this.id = id;
-    }
-
     public boolean isBronze(){
         return (this.getType() == (AffiliateType.BRONZE));
     }
@@ -105,6 +69,34 @@ public class Affiliate {
 
     public boolean isGold(){
         return (this.getType() == (AffiliateType.GOLD));
+    }
+
+    public Affiliate(int id) {
+        this.id = id;
+    }
+
+    public Affiliate(int id, String name, double balance) {
+        this.id = id;
+        this.name = name;
+        this.type = AffiliateType.BRONZE;
+        this.balance = 0;
+        this.commissionGenerated = 0;
+    }
+
+    public Affiliate(int id, String password, String name) {
+        this.id = id;
+        this.password = password;
+        this.name = name;
+        this.type = AffiliateType.BRONZE;
+        this.commissionGenerated = 0;
+    }
+
+    public Affiliate(int id, String name, AffiliateType type, double balance) {
+        this.id = id;
+        this.name = name;
+        this.type = AffiliateType.BRONZE;
+        this.balance = 0;
+        this.commissionGenerated = 0;
     }
 
     // override equals method to compare with ID

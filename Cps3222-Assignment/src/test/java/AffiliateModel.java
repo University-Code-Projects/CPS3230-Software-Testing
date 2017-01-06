@@ -39,7 +39,7 @@ public class AffiliateModel implements FsmModel{
         silver = false;
         gold = false;
         modelAffiliate = AffiliateStates.ADBRONZE;
-        Assert.assertEquals("The affiliate matches the correct type", bronze, aff.isBronze());
+        Assert.assertEquals("The affiliate type does not match the model type", bronze, aff.isBronze());
         plat.adClicked(aff.getId());
     }
 
@@ -51,13 +51,13 @@ public class AffiliateModel implements FsmModel{
             silver = false;
             gold = false;
             modelAffiliate = AffiliateStates.BRONZE;
-            Assert.assertEquals("The affiliate matches the correct type", bronze, aff.isBronze());
+            Assert.assertEquals("The affiliate type does not match the model type", bronze, aff.isBronze());
         }else {
             silver = true;
             bronze = false;
             gold = false;
             modelAffiliate = AffiliateStates.SILVER;
-            Assert.assertEquals("The affiliate matches the correct type", silver, aff.isSilver());
+            Assert.assertEquals("The affiliate type does not match the model type", silver, aff.isSilver());
         }
     }
 
@@ -68,7 +68,7 @@ public class AffiliateModel implements FsmModel{
         silver = true;
         gold = false;
         modelAffiliate = AffiliateStates.ADSILVER;
-        Assert.assertEquals("The affiliate matches the correct type", silver, aff.isSilver());
+        Assert.assertEquals("The affiliate type does not match the model type", silver, aff.isSilver());
         plat.adClicked(aff.getId());
     }
 
@@ -80,13 +80,13 @@ public class AffiliateModel implements FsmModel{
             gold = false;
             bronze = false;
             modelAffiliate = AffiliateStates.SILVER;
-            Assert.assertEquals("The affiliate matches the correct type", silver, aff.isSilver());
+            Assert.assertEquals("The affiliate type does not match the model type", silver, aff.isSilver());
         }else {
             gold = true;
             silver = false;
             bronze = false;
             modelAffiliate = AffiliateStates.GOLD;
-            Assert.assertEquals("The affiliate matches the correct type", gold, aff.isGold());
+            Assert.assertEquals("The affiliate type does not match the model type", gold, aff.isGold());
         }
     }
 
@@ -97,7 +97,7 @@ public class AffiliateModel implements FsmModel{
         silver = false;
         bronze = false;
         modelAffiliate = AffiliateStates.ADGOLD;
-        Assert.assertEquals("The affiliate matches the correct type", gold, aff.isGold());
+        Assert.assertEquals("The affiliate type does not match the model type", gold, aff.isGold());
         plat.adClicked(aff.getId());
     }
 
@@ -108,7 +108,7 @@ public class AffiliateModel implements FsmModel{
         silver = false;
         bronze = false;
         modelAffiliate = AffiliateStates.GOLD;
-        Assert.assertEquals("The affiliate matches the correct type", gold, aff.isGold());
+        Assert.assertEquals("The affiliate type does not match the model type", gold, aff.isGold());
     }
 
     public boolean withdrawGuard(){return (getState().equals(AffiliateStates.BRONZE)||getState().equals(AffiliateStates.SILVER)||getState().equals(AffiliateStates.GOLD)); }
@@ -126,15 +126,15 @@ public class AffiliateModel implements FsmModel{
         System.out.println(atype);
         if (atype == AffiliateType.BRONZE) {
             bronze = true;
-            Assert.assertEquals("The affiliate matches the correct type", bronze, aff.isBronze());
+            Assert.assertEquals("The affiliate type does not match the model type", bronze, aff.isBronze());
             modelAffiliate = AffiliateStates.BRONZE;
         }else if(atype == AffiliateType.SILVER){
             silver = true;
-            Assert.assertEquals("The affiliate matches the correct type", silver, aff.isSilver());
+            Assert.assertEquals("The affiliate type does not match the model type", silver, aff.isSilver());
             modelAffiliate = AffiliateStates.SILVER;
         }else{
             gold = true;
-            Assert.assertEquals("The affiliate matches the correct type", gold, aff.isGold());
+            Assert.assertEquals("The affiliate type does not match the model type", gold, aff.isGold());
             modelAffiliate = AffiliateStates.GOLD;
         }
     }

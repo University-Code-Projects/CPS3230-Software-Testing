@@ -9,13 +9,13 @@ import java.util.List;
 public class Keywords {
     List<String> keys = new ArrayList<String>();
 
+    public Keywords() {
+
+    }
     public Keywords(List<String> keys) {
         this.keys = keys;
     }
 
-    public Keywords() {
-
-    }
 
     public void addKeys(String s){
         keys.add(s);
