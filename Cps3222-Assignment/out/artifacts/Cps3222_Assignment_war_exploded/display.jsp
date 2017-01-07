@@ -48,14 +48,14 @@
                     }
                 }
 
-                System.out.println(id);
+                //System.out.println(id);
 
-                plat.registerAffiliate(aff1);
-                plat.registerAffiliate(aff2);
-                plat.registerAffiliate(aff3);
                 String x = request.getParameter("Withdraw");
                 String y = request.getParameter("Ad");
                 if(flag){
+                    plat.registerAffiliate(aff1);
+                    plat.registerAffiliate(aff2);
+                    plat.registerAffiliate(aff3);
                     a = new Affiliate(id,pass,"");
                     if(plat.validator(a)){
                         a = plat.getAffiliate(id);

@@ -38,9 +38,16 @@ public class AffiliateModel implements FsmModel{
         bronze = true;
         silver = false;
         gold = false;
-        modelAffiliate = AffiliateStates.ADBRONZE;
-        Assert.assertEquals("The affiliate type does not match the model type", bronze, aff.isBronze());
-        plat.adClicked(aff.getId());
+        int nextProb = (int)(Math.random() * 500);
+        if(nextProb == 5 ){
+            modelAffiliate = AffiliateStates.WITHDRAW;
+            Assert.assertEquals("The affiliate type does not match the model type", bronze, aff.isBronze());
+            plat.settleAffiliateBalance(aff);
+        }else {
+            modelAffiliate = AffiliateStates.ADBRONZE;
+            Assert.assertEquals("The affiliate type does not match the model type", bronze, aff.isBronze());
+            plat.adClicked(aff.getId());
+        }
     }
 
     public boolean transition50Guard(){  return getState().equals(AffiliateStates.ADBRONZE);  }
@@ -67,9 +74,16 @@ public class AffiliateModel implements FsmModel{
         bronze = false;
         silver = true;
         gold = false;
-        modelAffiliate = AffiliateStates.ADSILVER;
-        Assert.assertEquals("The affiliate type does not match the model type", silver, aff.isSilver());
-        plat.adClicked(aff.getId());
+        int nextProb = (int)(Math.random() * 500);
+        if(nextProb == 5 ){
+            modelAffiliate = AffiliateStates.WITHDRAW;
+            Assert.assertEquals("The affiliate type does not match the model type", silver, aff.isSilver());
+            plat.settleAffiliateBalance(aff);
+        }else {
+            modelAffiliate = AffiliateStates.ADSILVER;
+            Assert.assertEquals("The affiliate type does not match the model type", silver, aff.isSilver());
+            plat.adClicked(aff.getId());
+        }
     }
 
     public boolean transition500Guard(){  return getState().equals(AffiliateStates.ADSILVER);  }
@@ -96,9 +110,16 @@ public class AffiliateModel implements FsmModel{
         gold = true;
         silver = false;
         bronze = false;
-        modelAffiliate = AffiliateStates.ADGOLD;
-        Assert.assertEquals("The affiliate type does not match the model type", gold, aff.isGold());
-        plat.adClicked(aff.getId());
+        int nextProb = (int)(Math.random() * 500);
+        if(nextProb == 5 ){
+            modelAffiliate = AffiliateStates.WITHDRAW;
+            Assert.assertEquals("The affiliate type does not match the model type", gold, aff.isGold());
+            plat.settleAffiliateBalance(aff);
+        }else {
+            modelAffiliate = AffiliateStates.ADGOLD;
+            Assert.assertEquals("The affiliate type does not match the model type", gold, aff.isGold());
+            plat.adClicked(aff.getId());
+        }
     }
 
     public boolean transitionGreater500Guard(){  return getState().equals(AffiliateStates.ADGOLD);  }
@@ -115,13 +136,6 @@ public class AffiliateModel implements FsmModel{
 
     public @Action void withdraw(){
         modelAffiliate = AffiliateStates.WITHDRAW;
-        probability = new Random();
-
-        int nextProb = (int)(Math.random() * 500);
-        System.out.println("hi: "+nextProb);
-        if(nextProb == 5 ){
-            plat.settleAffiliateBalance(aff);
-        }
         AffiliateType atype = aff.getType();
         System.out.println(atype);
         if (atype == AffiliateType.BRONZE) {
@@ -143,7 +157,7 @@ public class AffiliateModel implements FsmModel{
     @Test
     public void main() {
         final GreedyTester tester = new GreedyTester(new AffiliateModel()); //Creates a test generator that can generate random walks. A greedy random walk gives preference to transitions that have never been taken before. Once all transitions out of a state have been taken, it behaves the same as a random walk.
-        tester.setResetProbability(0.00001);
+        tester.setResetProbability(0.001);
         Random rand = new Random();
         tester.setRandom(rand);   //Allows for a random path each time the model is run.
         tester.buildGraph(); //Builds a model of our FSM to ensure that the coverage metrics are correct.
@@ -152,7 +166,7 @@ public class AffiliateModel implements FsmModel{
         tester.addCoverageMetric(new TransitionPairCoverage()); //Records the transition pair coverage i.e. the number of paired transitions traversed during the execution of the test.
         tester.addCoverageMetric(new StateCoverage()); //Records the state coverage i.e. the number of states which have been visited during the execution of the test.
         tester.addCoverageMetric(new ActionCoverage()); //Records the number of @Action methods which have ben executed during the execution of the test.
-        tester.generate(100000); //Generates 500 transition
+        tester.generate(500); //Generates 500 transition
         tester.printCoverage(); //Prints the coverage metrics specified above.
     }
 }
